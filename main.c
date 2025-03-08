@@ -13,6 +13,8 @@ int main()
         if (peso >= 60) {
             soma = soma + peso;
             contador++;
+        } else {
+            menor++;
         }
         if (contador > 0) {
             media = soma / contador;
@@ -21,12 +23,15 @@ int main()
         }
         if (peso > pesomaior) {
             pesomaior = peso;
+
+
         }
     }while(i < 30);
 
     printf ("O maior peso eh %i \n", pesomaior);
     printf ("A media dos pesos maiores que 60 eh %i \n", media);
     printf ("A quantidade de pesos maiores de 60 eh %i \n", contador);
+    printf ("A quantidade de pesos menores de 60 eh %i \n", menor);
 
     return 0;
 }
